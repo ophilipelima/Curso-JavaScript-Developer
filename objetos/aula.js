@@ -1,16 +1,20 @@
-const pessoa = {
-	nome: 'Philipe Lima',
-	idade: 20,
+class Pessoa{
+    nome;
+    idade;
+    anoDeNascimento;
 
-    descrever: function () {
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+        this.anoDeNascimento = 2024 - idade;
+    }
+
+    descrever() {
         console.log('Meu nome é ' + this.nome +'e minha idade é ' + this.idade);
     }
-};
+}
 
-//pessoa.descrever = function (){
-//    console.log('Meu nome é ' + this.nome);
-//}
+const philipe = new Pessoa('Philipe', 20);
+const eva = new Pessoa('Eva', 52);
 
-//pessoa.descrever();
-//Acessando dinamicamente um atributo específico dentro do objeto
-console.log(pessoa['nome']);
+console.log(eva);
