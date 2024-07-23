@@ -2,7 +2,7 @@
 
 const numero = 6;
 
-for(contador = 0; contador <= 10; contador++){
-    tabuada = contador * numero;
+for(let contador = 0; contador <= 10; contador++){
+    let tabuada = contador * numero;
     console.log(numero, ' * ', contador, ' = ', tabuada);
 }
